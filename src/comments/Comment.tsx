@@ -10,7 +10,6 @@ interface CommentProps {
 function Comment(props: CommentProps): ReactElement {
   const dateString =
     props.date.toLocaleDateString() + " " + props.date.toLocaleTimeString()
-
   return (
     <div className="comment">
       <a href="/" className="avatar">
