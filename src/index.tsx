@@ -22,7 +22,7 @@ class App extends React.Component<AppProps, AppState> {
 
   render(): ReactNode {
     if (this.state.lattitude != null) {
-      return <div>Lattitude: {this.state.lattitude}</div>
+      return <SeasonDisplay lattitude={this.state.lattitude} />
     }
 
     if (this.state.errorMessage != null) {
