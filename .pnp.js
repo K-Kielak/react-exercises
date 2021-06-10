@@ -40,6 +40,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@testing-library/jest-dom", "npm:5.13.0"],
             ["@testing-library/react", "virtual:5f6e5a95419087aa7e08d620834f9d03042c58960440e675174ced4cfbfbf7105565ea7ab0a60c9e9708a2f573955ff265bb30d86c50863c376eb1f90d24ee47#npm:11.2.7"],
             ["@testing-library/user-event", "virtual:5f6e5a95419087aa7e08d620834f9d03042c58960440e675174ced4cfbfbf7105565ea7ab0a60c9e9708a2f573955ff265bb30d86c50863c376eb1f90d24ee47#npm:12.8.3"],
+            ["@types/faker", "npm:5.5.6"],
             ["@types/jest", "npm:26.0.23"],
             ["@types/node", "npm:12.20.15"],
             ["@types/react", "npm:17.0.11"],
@@ -55,6 +56,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-prettier", "virtual:5f6e5a95419087aa7e08d620834f9d03042c58960440e675174ced4cfbfbf7105565ea7ab0a60c9e9708a2f573955ff265bb30d86c50863c376eb1f90d24ee47#npm:3.4.0"],
             ["eslint-plugin-react", "virtual:5f6e5a95419087aa7e08d620834f9d03042c58960440e675174ced4cfbfbf7105565ea7ab0a60c9e9708a2f573955ff265bb30d86c50863c376eb1f90d24ee47#npm:7.24.0"],
             ["eslint-plugin-react-hooks", "virtual:5f6e5a95419087aa7e08d620834f9d03042c58960440e675174ced4cfbfbf7105565ea7ab0a60c9e9708a2f573955ff265bb30d86c50863c376eb1f90d24ee47#npm:4.2.0"],
+            ["faker", "npm:5.5.3"],
             ["husky", "npm:6.0.0"],
             ["prettier", "npm:2.3.1"],
             ["react", "npm:17.0.2"],
@@ -4883,6 +4885,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-estree-npm-0.0.46-173c5af455-69fcf64770.zip/node_modules/@types/estree/",
           "packageDependencies": [
             ["@types/estree", "npm:0.0.46"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@types/faker", [
+        ["npm:5.5.6", {
+          "packageLocation": "./.yarn/cache/@types-faker-npm-5.5.6-d7c8f5f824-d14deb091d.zip/node_modules/@types/faker/",
+          "packageDependencies": [
+            ["@types/faker", "npm:5.5.6"]
           ],
           "linkType": "HARD",
         }]
@@ -10625,6 +10636,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/extsprintf-npm-1.4.0-2b015bcaab-092e011574.zip/node_modules/extsprintf/",
           "packageDependencies": [
             ["extsprintf", "npm:1.4.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["faker", [
+        ["npm:5.5.3", {
+          "packageLocation": "./.yarn/cache/faker-npm-5.5.3-541ce97798-d03b749474.zip/node_modules/faker/",
+          "packageDependencies": [
+            ["faker", "npm:5.5.3"]
           ],
           "linkType": "HARD",
         }]
@@ -17072,6 +17092,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@testing-library/jest-dom", "npm:5.13.0"],
             ["@testing-library/react", "virtual:5f6e5a95419087aa7e08d620834f9d03042c58960440e675174ced4cfbfbf7105565ea7ab0a60c9e9708a2f573955ff265bb30d86c50863c376eb1f90d24ee47#npm:11.2.7"],
             ["@testing-library/user-event", "virtual:5f6e5a95419087aa7e08d620834f9d03042c58960440e675174ced4cfbfbf7105565ea7ab0a60c9e9708a2f573955ff265bb30d86c50863c376eb1f90d24ee47#npm:12.8.3"],
+            ["@types/faker", "npm:5.5.6"],
             ["@types/jest", "npm:26.0.23"],
             ["@types/node", "npm:12.20.15"],
             ["@types/react", "npm:17.0.11"],
@@ -17087,6 +17108,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-prettier", "virtual:5f6e5a95419087aa7e08d620834f9d03042c58960440e675174ced4cfbfbf7105565ea7ab0a60c9e9708a2f573955ff265bb30d86c50863c376eb1f90d24ee47#npm:3.4.0"],
             ["eslint-plugin-react", "virtual:5f6e5a95419087aa7e08d620834f9d03042c58960440e675174ced4cfbfbf7105565ea7ab0a60c9e9708a2f573955ff265bb30d86c50863c376eb1f90d24ee47#npm:7.24.0"],
             ["eslint-plugin-react-hooks", "virtual:5f6e5a95419087aa7e08d620834f9d03042c58960440e675174ced4cfbfbf7105565ea7ab0a60c9e9708a2f573955ff265bb30d86c50863c376eb1f90d24ee47#npm:4.2.0"],
+            ["faker", "npm:5.5.3"],
             ["husky", "npm:6.0.0"],
             ["prettier", "npm:2.3.1"],
             ["react", "npm:17.0.2"],
