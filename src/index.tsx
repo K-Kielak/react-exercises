@@ -1,8 +1,5 @@
-import React, { ReactElement } from "react"
+import React from "react"
 import ReactDOM from "react-dom"
-
-function App(): ReactElement {
-  return <div></div>
-}
+import App from "./pics/components/App"
 
 ReactDOM.render(<App />, document.getElementById("root"))
