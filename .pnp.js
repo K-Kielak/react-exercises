@@ -55,6 +55,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-prettier", "virtual:5f6e5a95419087aa7e08d620834f9d03042c58960440e675174ced4cfbfbf7105565ea7ab0a60c9e9708a2f573955ff265bb30d86c50863c376eb1f90d24ee47#npm:3.4.0"],
             ["eslint-plugin-react", "virtual:5f6e5a95419087aa7e08d620834f9d03042c58960440e675174ced4cfbfbf7105565ea7ab0a60c9e9708a2f573955ff265bb30d86c50863c376eb1f90d24ee47#npm:7.24.0"],
             ["eslint-plugin-react-hooks", "virtual:5f6e5a95419087aa7e08d620834f9d03042c58960440e675174ced4cfbfbf7105565ea7ab0a60c9e9708a2f573955ff265bb30d86c50863c376eb1f90d24ee47#npm:4.2.0"],
+            ["husky", "npm:6.0.0"],
             ["prettier", "npm:2.3.1"],
             ["react", "npm:17.0.2"],
             ["react-dom", "virtual:5f6e5a95419087aa7e08d620834f9d03042c58960440e675174ced4cfbfbf7105565ea7ab0a60c9e9708a2f573955ff265bb30d86c50863c376eb1f90d24ee47#npm:17.0.2"],
@@ -11870,6 +11871,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["husky", [
+        ["npm:6.0.0", {
+          "packageLocation": "./.yarn/cache/husky-npm-6.0.0-384872ea98-61e1f7f53f.zip/node_modules/husky/",
+          "packageDependencies": [
+            ["husky", "npm:6.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["iconv-lite", [
         ["npm:0.4.24", {
           "packageLocation": "./.yarn/cache/iconv-lite-npm-0.4.24-c5c4ac6695-a9b9521066.zip/node_modules/iconv-lite/",
@@ -17077,6 +17087,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-prettier", "virtual:5f6e5a95419087aa7e08d620834f9d03042c58960440e675174ced4cfbfbf7105565ea7ab0a60c9e9708a2f573955ff265bb30d86c50863c376eb1f90d24ee47#npm:3.4.0"],
             ["eslint-plugin-react", "virtual:5f6e5a95419087aa7e08d620834f9d03042c58960440e675174ced4cfbfbf7105565ea7ab0a60c9e9708a2f573955ff265bb30d86c50863c376eb1f90d24ee47#npm:7.24.0"],
             ["eslint-plugin-react-hooks", "virtual:5f6e5a95419087aa7e08d620834f9d03042c58960440e675174ced4cfbfbf7105565ea7ab0a60c9e9708a2f573955ff265bb30d86c50863c376eb1f90d24ee47#npm:4.2.0"],
+            ["husky", "npm:6.0.0"],
             ["prettier", "npm:2.3.1"],
             ["react", "npm:17.0.2"],
             ["react-dom", "virtual:5f6e5a95419087aa7e08d620834f9d03042c58960440e675174ced4cfbfbf7105565ea7ab0a60c9e9708a2f573955ff265bb30d86c50863c376eb1f90d24ee47#npm:17.0.2"],
