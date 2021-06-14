@@ -1,4 +1,4 @@
-import React, { ReactElement } from "react"
+import React, { ReactElement, useState } from "react"
 
 interface Item {
   title: string
@@ -10,10 +10,29 @@ interface AccordionProps {
 }
 
 const Accordion = (props: AccordionProps): ReactElement => {
+  const [activeIndex, setActiveIndex] = useState<number | null>(null)
+
+  const onClick = (index: number): void => {
+    return setActiveIndex(index)
+  }
+
+  const renderedItems = props.items.map((item, index) => {
+    return (
+      <React.Fragment key={item.title}>
+        <div className="title active" onClick={(): void => onClick(index)}>
+          <i className="dropdown icon"></i>
+          {item.title}
+        </div>
+        <div className="content active">
+          <p>{item.content}</p>
+        </div>
+      </React.Fragment>
+    )
+  })
   return (
-    <div>
-      <h1>Accordion</h1>
-      <p>Received {props.items.length} items</p>
+    <div className="ui styled accordion">
+      {renderedItems}
+      <h1>{activeIndex}</h1>
     </div>
   )
 }
