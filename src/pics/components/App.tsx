@@ -1,11 +1,11 @@
 import React, { ReactNode } from "react"
 
+import ImageList from "./ImageList"
 import SearchBar from "./SearchBar"
-import unsplash from "../api/unsplash"
+import unsplash, { UnsplashImage } from "../api/unsplash"
 
 interface AppState {
-  // ignore setting return type for unsplash, too much work for simple exercise
-  images: any[]
+  images: UnsplashImage[]
 }
 
 class App extends React.Component<{}, AppState> {
@@ -16,14 +16,20 @@ class App extends React.Component<{}, AppState> {
       params: { query: term },
     })
 
-    this.setState({ images: response.data.results })
+    const getImageUrl = (image: any): UnsplashImage => {
+      return {
+        id: image.id,
+        src: image.urls.regular,
+      }
+    }
+    this.setState({ images: response.data.results.map(getImageUrl) })
   }
 
   render = (): ReactNode => {
     return (
       <div className="ui container">
         <SearchBar onSubmit={this.onSearchSubmit} />
-        Found: {this.state.images.length} images
+        <ImageList images={this.state.images} />
       </div>
     )
   }
