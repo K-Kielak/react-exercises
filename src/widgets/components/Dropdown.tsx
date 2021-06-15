@@ -6,6 +6,7 @@ interface Option {
 }
 
 interface DropdownProps {
+  label: string
   selected: Option
   onSelectedChange: (newSelected: Option) => void
   options: Option[]
@@ -54,7 +55,7 @@ const Dropdown = (props: DropdownProps): ReactElement => {
   return (
     <div ref={ref} className="ui form">
       <div className="field">
-        <label className="label">Select a Color</label>
+        <label className="label">{props.label}</label>
         <div
           onClick={onSelectionClick}
           className={`ui selection dropdown ${dropdownVisible}`}

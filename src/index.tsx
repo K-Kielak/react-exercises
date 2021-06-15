@@ -1,5 +1,5 @@
 import React from "react"
 import ReactDOM from "react-dom"
-import App from "./widgets/components/App"
+import App from "./widgets/App"
 
 ReactDOM.render(<App />, document.getElementById("root"))

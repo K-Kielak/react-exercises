@@ -1,8 +1,9 @@
 import React, { ReactElement, useState } from "react"
 
-import Accordion, { Item } from "./Accordion"
-import Dropdown, { Option } from "./Dropdown"
-import Search from "./Search"
+import Accordion, { Item } from "./components/Accordion"
+import Dropdown, { Option } from "./components/Dropdown"
+import Search from "./components/Search"
+import Translate from "./components/Translate"
 
 const items: Item[] = [
   {
@@ -19,7 +20,7 @@ const items: Item[] = [
   },
 ]
 
-const options: Option[] = [
+const colorOptions: Option[] = [
   {
     label: "The Color Red",
     value: "red",
@@ -35,15 +36,11 @@ const options: Option[] = [
 ]
 
 const App = (): ReactElement => {
-  const [selected, setSelected] = useState<Option>(options[0])
+  const [selected, setSelected] = useState<Option>(colorOptions[0])
 
   return (
     <div>
-      <Dropdown
-        selected={selected}
-        onSelectedChange={setSelected}
-        options={options}
-      />
+      <Translate />
     </div>
   )
 }
