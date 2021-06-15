@@ -1,6 +1,7 @@
 import React, { ReactElement } from "react"
 
 import Accordion, { Item } from "./Accordion"
+import Search from "./Search"
 
 const items: Item[] = [
   {
@@ -20,7 +21,7 @@ const items: Item[] = [
 const App = (): ReactElement => {
   return (
     <div>
-      <Accordion items={items} />
+      <Search />
     </div>
   )
 }
