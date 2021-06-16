@@ -2,6 +2,7 @@ import React, { ReactElement, useState } from "react"
 
 import Accordion, { Item } from "./components/Accordion"
 import Dropdown, { Option } from "./components/Dropdown"
+import Route from "./components/Route"
 import Search from "./components/Search"
 import Translate from "./components/Translate"
 
@@ -40,7 +41,23 @@ const App = (): ReactElement => {
 
   return (
     <div>
-      <Translate />
+      <Route pathname="/">
+        <Accordion items={items} />
+      </Route>
+      <Route pathname="/dropdown">
+        <Dropdown
+          label="Select a Color"
+          selected={selected}
+          onSelectedChange={setSelected}
+          options={colorOptions}
+        />
+      </Route>
+      <Route pathname="/list">
+        <Search />
+      </Route>
+      <Route pathname="/translate">
+        <Translate />
+      </Route>
     </div>
   )
 }
