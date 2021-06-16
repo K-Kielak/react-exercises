@@ -1,4 +1,5 @@
-import React, { ReactElement, ReactNode } from "react"
+import React, { ReactElement, ReactNode, useState } from "react"
+import { useEffect } from "react"
 
 interface RouteProps {
   pathname: string
@@ -6,7 +7,21 @@ interface RouteProps {
 }
 
 const Route = (props: RouteProps): ReactElement | null => {
-  if (window.location.pathname === props.pathname) {
+  const [currentPath, setCurrentPath] = useState(window.location.pathname)
+
+  useEffect(() => {
+    const onLocationChange = (): void => {
+      setCurrentPath(window.location.pathname)
+    }
+
+    window.addEventListener("popstate", onLocationChange)
+
+    return (): void => {
+      window.removeEventListener("popstate", onLocationChange)
+    }
+  }, [])
+
+  if (currentPath === props.pathname) {
     return <div>{props.children}</div>
   }
 

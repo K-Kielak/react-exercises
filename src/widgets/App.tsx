@@ -2,6 +2,7 @@ import React, { ReactElement, useState } from "react"
 
 import Accordion, { Item } from "./components/Accordion"
 import Dropdown, { Option } from "./components/Dropdown"
+import Header from "./components/Header"
 import Route from "./components/Route"
 import Search from "./components/Search"
 import Translate from "./components/Translate"
@@ -41,6 +42,7 @@ const App = (): ReactElement => {
 
   return (
     <div>
+      <Header />
       <Route pathname="/">
         <Accordion items={items} />
       </Route>
